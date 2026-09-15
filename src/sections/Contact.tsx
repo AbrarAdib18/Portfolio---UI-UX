@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { CheckCircle2, Download, Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Briefcase, CheckCircle2, Download, Github, Linkedin, Mail, Phone, Youtube } from "lucide-react";
 import { portfolioLinks } from "../data/portfolio";
 import Button from "../components/Button";
 import Reveal from "../components/Reveal";
@@ -108,6 +108,34 @@ export default function Contact() {
                   iconPosition="left"
                 >
                   LinkedIn
+                </Button>
+              )}
+              {portfolioLinks.youtube && (
+                <Button
+                  as="a"
+                  href={portfolioLinks.youtube}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  variant="secondary"
+                  className="justify-start"
+                  icon={<Youtube className="h-4 w-4" aria-hidden="true" />}
+                  iconPosition="left"
+                >
+                  YouTube
+                </Button>
+              )}
+              {portfolioLinks.fiverr && (
+                <Button
+                  as="a"
+                  href={portfolioLinks.fiverr}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  variant="secondary"
+                  className="justify-start"
+                  icon={<Briefcase className="h-4 w-4" aria-hidden="true" />}
+                  iconPosition="left"
+                >
+                  Fiverr
                 </Button>
               )}
               {portfolioLinks.cv && (

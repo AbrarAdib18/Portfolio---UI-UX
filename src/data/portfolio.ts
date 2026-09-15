@@ -43,8 +43,10 @@ export const portfolioLinks = {
   phone: "tel:+8801842049477",
   phoneDisplay: "01842049477",
   location: "Dhaka, Bangladesh",
-  github: "",
-  linkedin: "",
+  github: "https://github.com/AbrarAdib18",
+  linkedin: "https://www.linkedin.com/in/abrar-habib-adib-b0b086332/",
+  youtube: "https://www.youtube.com/@AbrarAdib",
+  fiverr: "https://www.fiverr.com/andrew2649",
   pinterest: "https://uk.pinterest.com/rayan_stark_/",
   // No CV file exists in the project yet. Add one (e.g. /ABRAR-CV.pdf in
   // /public) and set this path to enable the Download CV buttons.

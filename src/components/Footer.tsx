@@ -1,4 +1,4 @@
-import { ArrowUp, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowUp, Briefcase, Github, Linkedin, Mail, Youtube } from "lucide-react";
 import { navLinks, portfolioLinks, profile } from "../data/portfolio";
 
 export default function Footer() {
@@ -59,6 +59,28 @@ export default function Footer() {
               >
                 <Linkedin className="h-4 w-4" aria-hidden="true" />
                 LinkedIn
+              </a>
+            )}
+            {portfolioLinks.youtube && (
+              <a
+                href={portfolioLinks.youtube}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="flex items-center gap-2 text-sm text-paper-400 transition-colors hover:text-paper-100"
+              >
+                <Youtube className="h-4 w-4" aria-hidden="true" />
+                YouTube
+              </a>
+            )}
+            {portfolioLinks.fiverr && (
+              <a
+                href={portfolioLinks.fiverr}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="flex items-center gap-2 text-sm text-paper-400 transition-colors hover:text-paper-100"
+              >
+                <Briefcase className="h-4 w-4" aria-hidden="true" />
+                Fiverr
               </a>
             )}
           </div>

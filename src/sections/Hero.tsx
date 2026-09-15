@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { ArrowRight, Download, Github, Linkedin, MapPin, Mail } from "lucide-react";
+import { ArrowRight, Briefcase, Download, Github, Linkedin, MapPin, Mail, Youtube } from "lucide-react";
 import { profile, portfolioLinks } from "../data/portfolio";
 import Button from "../components/Button";
 import SafeImage from "../components/SafeImage";
@@ -132,6 +132,28 @@ export default function Hero() {
               >
                 <Linkedin className="h-4 w-4" aria-hidden="true" />
                 LinkedIn
+              </a>
+            )}
+            {portfolioLinks.youtube && (
+              <a
+                href={portfolioLinks.youtube}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="flex items-center gap-2 text-sm text-paper-400 transition-colors hover:text-paper-100"
+              >
+                <Youtube className="h-4 w-4" aria-hidden="true" />
+                YouTube
+              </a>
+            )}
+            {portfolioLinks.fiverr && (
+              <a
+                href={portfolioLinks.fiverr}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="flex items-center gap-2 text-sm text-paper-400 transition-colors hover:text-paper-100"
+              >
+                <Briefcase className="h-4 w-4" aria-hidden="true" />
+                Fiverr
               </a>
             )}
             <a
